@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/UpdateManager/UpdateManager.iml" filepath="$PROJECT_DIR$/UpdateManager/UpdateManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/UpdateManager.iml" filepath="$PROJECT_DIR$/UpdateManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/UpdateManager/UpdateManager-UpdateManager.iml" filepath="$PROJECT_DIR$/UpdateManager/UpdateManager-UpdateManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/update-manager.iml" filepath="$PROJECT_DIR$/update-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
     </modules>
   </component>
 </project>
