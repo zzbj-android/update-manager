@@ -4,6 +4,19 @@ android {
     compileSdkVersion 19
     buildToolsVersion "19.0.2"
 
+    sourceSets {
+
+        instrumentTest {
+            java.srcDirs = ['src/instrumentTest/java']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
     defaultConfig {
         minSdkVersion 8
         targetSdkVersion 19
@@ -15,6 +28,8 @@ android {
         proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
     }
 }
+
+
 
 dependencies {
     compile 'com.android.support:appcompat-v7:+'
