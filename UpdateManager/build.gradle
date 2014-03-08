@@ -7,7 +7,8 @@ android {
     sourceSets {
 
         instrumentTest {
-            java.srcDirs = ['src/instrumentTest/java']
+            instrumentTest.setRoot('src/instrumentTest')
+            manifest.srcFile file('src/instrumentTest/AndroidManifest.xml')
         }
     }
 
@@ -32,7 +33,9 @@ android {
 
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:+'
+
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':util')
+    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.android.support:support-v4:+'
 }
