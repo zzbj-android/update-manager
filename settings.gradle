@@ -1,1 +1,1 @@
-include ':UpdateManager'
+include ':UpdateManager', 'util:util'
